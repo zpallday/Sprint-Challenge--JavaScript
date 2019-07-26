@@ -21,7 +21,8 @@ name: "tyrannosaurus",
 diet: "carnivorous",
 weight: "7000kg",
 length: "12m",
-period: "Late Cretaceous"
+period: "Late Cretaceous",
+roar: "RAWERSRARARWERSARARARRRR!"
  };
 
 console.log(tyrannosaurus);
@@ -106,8 +107,9 @@ contactInfo.push(graduates[i].first_name + graduates[i].email)
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 for(let i = 0; i < graduates.length; i++){
-if (graduates[i].university.includes('uni')) 
-  uni.push(graduates[i].university)
+if (graduates[i].university.toLowerCase().includes("uni")) {
+  uni.push(graduates[i].university);
+ }
 }
 console.log(uni);
 
@@ -161,11 +163,8 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const lowerPopulation = [];
- lowerPopulation = zooAnimals.filter(function(objects) {
-  objects.population < 5;
- })
-console.log(lowerPopulation);
-
+const largerPopulation = zooAnimals.filter(animal => animal.population < 5);;
+console.log(largerPopulation);	
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
@@ -173,7 +172,7 @@ The zoos need to know their total animal population across the United States.  F
 */
 
 
-populationTotal = zooAnimals.reduce(function (population, zooAnimals) {
+const populationTotal = zooAnimals.reduce(function (population, zooAnimals) {
   return population + zooAnimals.population;
 },0);
 
