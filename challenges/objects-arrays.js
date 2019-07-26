@@ -24,7 +24,7 @@ length: "12m",
 period: "Late Cretaceous"
  };
 
-console.log();
+console.log(tyrannosaurus);
 
 
 // What was the diet of a velociraptor?
@@ -36,7 +36,7 @@ const velociraptor = {
   period: "Late Cretaceous"
    };
 
-console.log();
+console.log(velociraptor);
 
 // How long was a stegosaurus?
 const stegosaurus = {
@@ -46,7 +46,7 @@ const stegosaurus = {
   length: "9m",
   period: "Late Jurassic"
    };
-console.log();
+console.log(stegosaurus);
 
 // What time period did tyrannosaurus live in?
 
@@ -99,13 +99,14 @@ Log the result of your new array. */
 const contactInfo = [];
 for(let i = 0; i < graduates.length; i++){
 contactInfo.push(graduates[i].first_name + graduates[i].email)
+}
   console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 for(let i = 0; i < graduates.length; i++){
-if (graduates[i].university.includes('uni')) {
+if (graduates[i].university.includes('uni')) 
   uni.push(graduates[i].university)
 }
 console.log(uni);
