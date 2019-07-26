@@ -14,40 +14,53 @@
 
 // Using your dinosaur objects, log answers to these questions:
 
-// How much did tyrannosaurus weigh?
 
 const tyrannosaurus = {
-name: "tyrannosaurus",
-diet: "carnivorous",
-weight: "7000kg",
-length: "12m",
-period: "Late Cretaceous",
-roar: "RAWERSRARARWERSARARARRRR!"
- };
+  name: "tyrannosaurus",
+  diet: "carnivorous",
+  weight: "7000kg",
+  length: "12m",
+  period: "Late Cretaceous",
+  roar: "RAWERSRARARWERSARARARRRR!"
+   };
+  
+   const velociraptor = {
+    name: "velociraptor",
+    diet: "carnivorous",
+    weight: "15kg",
+    length: "1.8m",
+    period: "Late Cretaceous"
+     };
+  
+     const stegosaurus = {
+      name: "stegosaurus",
+      diet: "herbivorous",
+      weight: "2000kg",
+      length: "9m",
+      period: "Late Jurassic"
+       };
 
-console.log(tyrannosaurus);
+
+
+
+
+
+
+
+// How much did tyrannosaurus weigh?
+
+
+
+console.log(tyrannosaurus.weight);
 
 
 // What was the diet of a velociraptor?
-const velociraptor = {
-  name: "velociraptor",
-  diet: "carnivorous",
-  weight: "15kg",
-  length: "1.8m",
-  period: "Late Cretaceous"
-   };
 
-console.log(velociraptor);
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-const stegosaurus = {
-  name: "stegosaurus",
-  diet: "herbivorous",
-  weight: "2000kg",
-  length: "9m",
-  period: "Late Jurassic"
-   };
-console.log(stegosaurus);
+
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
 
@@ -163,7 +176,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const lowerPopulation = [];
-const largerPopulation = zooAnimals.filter(animal => animal.population < 5);;
+largerPopulation = zooAnimals.filter(animal => animal.population < 5)
 console.log(largerPopulation);	
 /* Request 4: .reduce() 
 
